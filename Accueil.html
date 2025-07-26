@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Accuiel</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body >
+<style>
+    body {
+      background-color: #8f8a8a; 
+      color: #000;
+    }
+
+    .custom-navbar {
+      background-color: #7E7676; 
+    }
+
+    .nav-link,
+    .navbar-brand {
+      color: rgb(0, 0, 0) !important;
+    }
+
+    .nav-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+<nav class="navbar navbar-expand-lg ">
+  <div class="container-fluid">
+   
+
+    <!--  pour mobile -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+     
+      <span class="navbar-toggler-icon  "></span>
+    </button>
+
+    <!-- nav -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav m-auto fs-2 d-flex gap-5 ">
+        <li class="nav-item "><a class="nav-link" href="Accueil.html">Accueil</a></li>
+        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">À propos</a></li>
+        <li class="nav-item"><a class="btn btn-dark ms-4"  data-bs-toggle="modal" data-bs-target="#myModal">Contact</a></li>
+      </ul>
+       <a class="navbar-brand d-flex align-items-center d-flex gap-5" href="#">
+     
+      <span>Workly</span>
+    </a>
+    </div>
+
+    <!-- The Modal -->
+<div class="modal" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+     
+      <div class="modal-header">
+        <h4 class="modal-title"></h4>
+        <button type="button" class="btn-close" data-bs-dismiss="Nom et prénom"></button>
+      </div>
+
+      <!-- Modal body -->
+     <div class="container  background-color: #8f8a8a; 
+      color: #000">
+    <h2 class="text-center mb-5" style="font-size: 36px;">Contact</h2>
+    <form class="w-50 mx-auto">
+      <div class="mb-3">
+        <input type="text" class="form-control rounded-pill" placeholder="Nom et prénom">
+      </div>
+      <div class="mb-3">
+        <input type="email" class="form-control rounded-pill" placeholder="Email">
+      </div>
+      <div class="mb-3">
+        <input type="tel" class="form-control rounded-pill" placeholder="Téléphone">
+      </div>
+      <div class="mb-3">
+        <textarea class="form-control rounded-4" rows="4" placeholder="espace individuel ou en equipe"></textarea>
+      </div>
+       </div>
+      <div class="text-center">
+        <button type="submit" class="btn rounded-pill px-5 btn-send">Envoyer</button>
+      </div>
+    </form>
+  </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+</nav>
+
+<!-- JS de Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</header>
+ 
+<div class="position-relative text-white">
+  <img src="photo/home.jpeg" class="img-fluid w-100" alt="Ma photo" style="border: 2px solid rgb(146, 141, 141); max-height: 529px; object-fit: cover;">
+  
+  <div class="position-absolute top-50 start-50 translate-middle text-center bg-dark bg-opacity-50 p-4 rounded">
+    <h2 class="display-5">Bienvenue à<br>notre service</h2>
+    <a href="services.html" class="btn btn-secondary">Réserver maintenant</a>
+  </div>
+
+</div>
+</section>
+
+<!--pgination-->
+<div>
+  <ul class="pagination justify-content-center">
+    <li class="page-item active">
+      <a class="page-link bg-dark border-dark text-white px-4 py-2 rounded-pill" href="services.html">1</a>
+    </li>
+    <li class="page-item">
+      <a class="page-link bg-transparent border-dark text-dark px-4 py-2 rounded-pill" href="about.html">2</a>
+    </li><li class="page-item">
+      <a class="page-link bg-transparent border-dark text-dark px-4 py-2 rounded-pill" href="services.html">3</a>
+    </li>
+    <li class="page-item">
+      <a class="page-link bg-transparent border-dark text-dark px-4 py-2 rounded-pill" href="contact.html">4</a>
+    </li>
+  </ul>
+</div>
+
+
+<!--footer-->
+   <footer class="bg-secondary text-dark pt-4 pb-3">
+  <div class="container">
+    <div class="row">
+
+      <!-- Colonne Contact -->
+      <div class="col-md-4 mb-3">
+        <h5>CONTACT</h5>
+        <p>
+          <img src="photo/tele.png" alt="téléphone" width="16" height="16" class="me-2">
+          +212 66 77 87
+        </p>
+        <p>
+          <img src="photo/inst.png" alt="Instagram" width="16" height="16" class="me-2">
+          workly
+        </p>
+        <p>
+          <img src="photo/twi.png" alt="Twitter" width="16" height="16" class="me-2">
+          workly
+        </p>
+      </div>
+
+      <!-- Colonne Services -->
+      <div class="col-md-4 mb-3">
+        <h5>Services</h5>
+        <p>. Espace en équipe</p>
+        <p>. Espace individuel</p>
+        <p>. Salle de réunion</p>
+      </div>
+
+      <!-- Colonne Newsletter -->
+      <div class="col-md-4 mb-3">
+        <h5>Inscription</h5>
+        <form>
+          <div class="mb-2">
+            <label for="email" class="form-label">Email :</label>
+            <input type="email" class="form-control" id="email" placeholder="Entrez votre email">
+          </div>
+          <button type="submit" class="btn btn-dark">Sign Up</button>
+        </form>
+      </div>
+
+    </div>
+    <div class="text-center mt-3">
+      <small>&copy; 2025 Workly. Tous droits réservés.</small>
+    </div>
+  </div>
+</footer>
+
+      <div> 
+
+      </div>
+     
+   </footer>
+</body>
+</html>
+

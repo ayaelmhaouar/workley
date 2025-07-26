@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>À propos</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+  <style>
+    body {
+      background-color: #8f8a8a; 
+      color: #000;
+    }
+
+    .custom-navbar {
+      background-color: #7E7676;
+    }
+
+    .nav-link,
+    .navbar-brand {
+      color: rgb(44, 41, 41) !important;
+    }
+
+    .nav-link:hover {
+      text-decoration: underline;
+    }
+     footer {
+      background-color: #7E7676;
+      color: white;
+      padding: 20px 0;
+    }
+  </style>
+</head>
+<body>
+  <script>
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.querySelector("form");
+
+  form.addEventListener("submit", function (event) {
+    event.preventDefault();
+    const nom = form.querySelector('input[type="text"]').value.trim();
+    const email = form.querySelector('input[type="email"]').value.trim();
+    const tel = form.querySelector('input[type="tel"]').value.trim();
+    const message = form.querySelector('textarea').value.trim();
+
+    // Vérification
+    if (nom && email && tel && message) {
+      alert("✅ Merci " + nom + " ! Votre message a bien été envoyé.");
+      form.reset();
+    } else {
+      alert("⚠️ Veuillez remplir tous les champs avant d'envoyer le formulaire.");
+    }
+  });
+});
+</script>
+
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg custom-navbar">
+  <div class="container-fluid">
+    <!-- Bouton Mobile -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Menu -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav m-auto fs-4 d-flex gap-4">
+        <li class="nav-item"><a class="nav-link" href="Accueil.html">Accueil</a></li>
+        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+        <li class="nav-item"><a class="nav-link active fw-bold" href="about.html">À propos</a></li>
+        <li class="nav-item"><a class="btn btn-dark ms-3" href="contact.html">Réserve</a></li>
+      </ul>
+      <a class="navbar-brand ms-4 fw-bold" href="#">Workly</a>
+    </div>
+  </div>
+</nav>
+
+
+<!-- JS de Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- SECTION CONTACT -->
+<section class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-5" style="font-size: 36px;">Réserve </h2>
+    <form class="w-50 mx-auto">
+      <div class="mb-3">
+        <input type="text" class="form-control rounded-pill" placeholder="Nom et prénom">
+      </div>
+      <div class="mb-3">
+        <input type="email" class="form-control rounded-pill" placeholder="Email">
+      </div>
+      <div class="mb-3">
+        <input type="tel" class="form-control rounded-pill" placeholder="Téléphone">
+      </div>
+      <div class="mb-3">
+        <textarea class="form-control rounded-4" rows="4" placeholder="espace individuel ou en equipe"></textarea>
+      </div>
+      <div class="text-center">
+        <button type="submit" class="btn rounded-pill px-5 btn-send">Envoyer</button>
+      </div>
+    </form>
+  </div>
+</section>
+
+<!--pgination-->
+<div>
+  <ul class="pagination justify-content-center">
+    <li class="page-item active">
+      <a class="page-link bg-dark border-dark text-white px-4 py-2 rounded-pill" href="services.html">1</a>
+    </li>
+    <li class="page-item">
+      <a class="page-link bg-transparent border-dark text-dark px-4 py-2 rounded-pill" href="about.html">2</a>
+    </li><li class="page-item">
+      <a class="page-link bg-transparent border-dark text-dark px-4 py-2 rounded-pill" href="services.html">3</a>
+    </li>
+    <li class="page-item">
+      <a class="page-link bg-transparent border-dark text-dark px-4 py-2 rounded-pill" href="contact.html">4</a>
+    </li>
+  </ul>
+</div>
+<!--footr-->
+<footer class=" text-dark pt-4 pb-3">
+
+
+  <div class="container">
+    <div class="row">
+
+      <!--  Contact -->
+      <div class="col-md-4 mb-3">
+        <h5>CONTACT</h5>
+        <p>
+          <img src="photo/tele.png" alt="téléphone" width="16" height="16" class="me-2">
+          +212 66 77 87
+        </p>
+        <p>
+          <img src="photo/inst.png" alt="Instagram" width="16" height="16" class="me-2">
+          workly
+        </p>
+        <p>
+          <img src="photo/twi.png" alt="Twitter" width="16" height="16" class="me-2">
+          workly
+        </p>
+      </div>
+
+      <!--  Services -->
+      <div class="col-md-4 mb-3">
+        <h5>Services</h5>
+        <p>. Espace en équipe</p>
+        <p>. Espace individuel</p>
+        <p>. Salle de réunion</p>
+      </div>
+
+
+      <div class="col-md-4 mb-3">
+        <h5>Inscription</h5>
+        <form>
+          <div class="mb-2">
+            <label for="email" class="form-label">Email :</label>
+            <input type="email" class="form-control" id="email" placeholder="Entrez votre email">
+          </div>
+          <button type="submit" class="btn btn-dark">Sign Up</button>
+        </form>
+      </div>
+
+    </div>
+    <div class="text-center mt-3">
+      <small>&copy; 2025 Workly. Tous droits réservés.</small>
+    </div>
+  </div>
+</footer>
+
+      <div> 
+
+      </div>
+     
+   </footer>
+</div>
+
+</body>
+</html>je veux aussi animation sur contact penadant je clique affiche page contatct comme animation pope ap
